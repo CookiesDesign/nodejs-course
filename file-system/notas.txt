@@ -1,0 +1,32 @@
+/* -------- Módulos preconstruidos en Nodejs -------------
+Son módulos propios de node y para llamarlos se llaman igual solo que el nombre del módulo directamente
+Módulo del sistema operativo llamado OS lo importamos y lo que me retorna el módulo lo guardamos en const os */
+
+/* const os = require('os');
+
+console.log(os.platform());
+console.log(os.release());
+console.log('free mem:', os.freemem()); */
+
+/*   ----------- Código asíncrono -----------------------
+La tarea de crear un archivo no es tarea de node es tarea del SO, node le dice:
+- Sistema operativo crea un archivo cuando termines ejecuta la función, el callback
+- Mientras termina de crear el archivo sigue ejecutando el código
+- Así que veremos en consola primero el ultima línea de código y después el archivo creado. */
+
+
+/*  Modulo de filesystem:
+- File System nos permite trabajar con los archivos de SO, para interactuar con archivos
+writeFile | sirve para crear un nuevo archivo y es asíncrono 
+ PARAMETROS:
+  1- Recibe la ruta 
+  2- El contenido 
+  3- Callback función que se ejecuta cuando termina el proceso anterior, y se ejecuta cuando termine la acción Recibe el error 
+  
+readFile sirve para leer archivos y es asíncrono 
+ PARAMETROS: 
+ 1- El archivo 
+ 2- Cuando termine la operación asíncrona ejecutara este callback 
+ (recibe un error o los datos que están dentro de este archivo en formato crudo) 
+ 3- Para convertir la Data o resultado a un string utilizamos toString*/
+ 
