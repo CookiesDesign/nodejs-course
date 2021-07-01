@@ -1,0 +1,45 @@
+--------------------- NPM -------------------------
+NPM = Node Package Manager (administrador de paquetes de node)
+
+NPM Sirve para instalar paquetes que no vienen en nodejs.
+En este caso instalaremos uno llamado colors para darle color a los textos ejecutados en consola
+
+====> Comando dentro del proyecto y lo instala desde npmjs.com| npm install colors
+
+Después de ejecutar el comando, en el proyecto se agrega una nueva carpeta llamada (node_modules) 
+y un archivo llamado package-lock.json | así trabaja internamente npm y node
+
+====> Node_modules es para contener los nuevos módulos que instalamos
+====> Package-lock.json lista que módulos se han instalado
+
+Para hacer uso de el paquete se realiza de la siguiente manera | const colors = require("colors");
+Para agregarle color a un string se le pone un punto | "hola".green o "hola".yellow
+
+
+CUANDO QUEREMOS USAR OTRO PC, REQUERIMOS INSTALAR TODOS LOS MODULOS DE NUESTRO PROYECTO ESTO SE REALIZA DE LA SIGUIENTE MANERA 
+====>  npm init, package.json y npm install (npm i), npm start <====
+
+- Comando que crea la información del proyecto (package.json) | npm init
+- Ese comando nos pide el nombre del paquete, la versión, una descripción, el punto de entrada de la app, el repo de git, 
+palabras clave de cómo pueden conseguir mi proyecto, el autor y por último confirmamos todo este correcto.
+- Se encontrara un archivo en el proyecto llamado | package.json | es un archivo de información sobre el proyecto y 
+aparecen las dependencias de esta manera node sabe que el proyecto depende de esos módulos y los scripts
+podemos usar uno que nos da npm llamado start así cuando desde la console ejecute el comando npm start hace algo 
+(en este caso inicia el servidor | node index.js)
+
+====> Generalidades de NPM <====
+
+- Node_modules es para contener los nuevos módulos que instalamos
+- Package-lock.json lista que módulos se han instalado
+- Package.json es un archivo de configuración con información sobre el proyecto, aparecen las dependencias así sabe nodejs
+que el proyecto depende de esos módulos, cuando ejecuten el npm install LOS INSTALA. y también tiene los scripts npm start, 
+y cuando desde la consola ejecute el comando npm start hace algo (En este caso inicia el servidor | 
+node modulos_node/modulo_HTTP/index.js), para scripts personalizados usamos npm run NOMBRE_COMANDO
+- npm init para crear el package.json
+- npm install o (npm i) | instala las dependencias necesarias para el proyecto (Este comando lee el package.json)
+- npm start o npm run NOMBRE_COMANDO | ejecuta lo que pongamos en el package.json en los scripts 
+(En este caso inicia el servidor HTTP con node modulos_node/modulo_HTTP/index.js )
+- npm install MODULO | instala un módulo de internet y guarda todos los módulos en la carpeta node_modules
+
+
+

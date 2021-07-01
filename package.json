@@ -1,0 +1,30 @@
+{
+  "name": "nodejs-course",
+  "version": "1.0.0",
+  "description": "Basic Nodejs course + example exercises",
+  "main": "index.js",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CookiesDesign/nodejs-course.git"
+  },
+  "keywords": [
+    "Nodejs",
+    "course",
+    "Nodejs",
+    "español"
+  ],
+  "author": "Cookies Design",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CookiesDesign/nodejs-course/issues"
+  },
+  "homepage": "https://github.com/CookiesDesign/nodejs-course#readme"
+}

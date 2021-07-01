@@ -1,0 +1,6 @@
+----------------- EXPRESS ------------------
+Es un framework para crear servidores de manera mas facil e intuitiva
+
+Primeramente realizamos la importacion, inicializamos el servidor y le asignamos en que puerto va a encontrarse.
+Despues si entran a una ruta en específico puede responder algo con server.get("ruta", callback) el callback de ese método 
+recibe por parametro una petición y una respuesta.

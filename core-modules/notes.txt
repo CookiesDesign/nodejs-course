@@ -1,0 +1,15 @@
+-------- Módulos preconstruidos en Nodejs -------------
+Son módulos propios de node y para llamarlos se llaman igual solo que el nombre del módulo directamente
+Módulo del sistema operativo llamado OS lo importamos y lo que me retorna el módulo lo guardamos en const os.
+
+const os = require('os');
+
+console.log(os.platform());
+console.log(os.release());
+console.log('free mem:', os.freemem()); 
+
+----------- Código asíncrono -----------------------
+La tarea de crear un archivo no es tarea de node es tarea del SO, node le dice:
+- Sistema operativo crea un archivo cuando termines ejecuta la función, el callback
+- Mientras termina de crear el archivo sigue ejecutando el código
+- Así que veremos en consola primero el ultima línea de código y después el archivo creado. 
