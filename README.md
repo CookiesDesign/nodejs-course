@@ -3,7 +3,7 @@
 ------------
 
 
-Node.js es un entorno que trabaja en tiempo de ejecución, de código abierto, multi-plataforma, que permite a los desarrolladores crear toda clase de herramientas de lado servidor y aplicaciones en JavaScript. 
+Node.js es un entorno que trabaja en tiempo de ejecución, de código abierto, multi-plataforma, este permite a los desarrolladores crear toda clase de herramientas de lado servidor y aplicaciones en JavaScript. 
 
 ------------
 
