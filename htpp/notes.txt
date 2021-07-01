@@ -1,0 +1,20 @@
+-------------- Modulo Http en Nodejs --------------------
+Este módulo lo que nos permite usar HTTP en nuestro servidor, recibe peticiones HTTP y da respuestas a los clientes 
+desde el server
+
+Creamos un servidor con este módulo con el método createServer y recibe un callback con:
+- CreateServer me retorna un objeto | cuando termines de crear este servidor ejecuta el callback, recibe por parámetro 
+la petición (request | req) y la respuesta del server (response | res) | cuando el servidor ya este inicializado, 
+le decimos en que puerto va a escuchar mi servidor y cuando escuche muestre por consola un mensaje
+- Respondemos con el parámetro de respuesta un un h1 cada vez que entren al sitio web y termina la respuesta, 
+va a seguir recibiendo peticiones de otros usuarios
+- La consola se queda escuchando y si vamos a ese puerto desde el navegador nos sale el h1 | http://localhost:2800/
+
+
+CUANDO RESPONDEMOS ALGO, LE PODEMOS DECIR EN LA CABECERA EL TIPO DE CONTENIDO y el código de estado HTTP
+- Vamos a escribir una cabecera para darle más info al navegador, parámetros 
+1- Código de estado HTTP (200 o 404) 
+2- Un objeto con el tipo de contenido (HTML) o texto plano
+
+*Si vamos a la consola y abrimos las secciones de network y vemos dos peticiones con el código de estado y 
+el tipo de documento
